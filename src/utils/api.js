@@ -1,4 +1,4 @@
-import {post, get} from './http'
+/* import {post, get} from './http'
 import qs from 'qs'
 
 const api = 'http://localhost:3000'
@@ -20,3 +20,6 @@ export const getInfo = () => {
   return get('http://localhost:3000/users')
     .then(res => res)
 }
+ */
+import Vue from 'vue'
+export default new Vue

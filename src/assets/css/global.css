@@ -1,0 +1,24 @@
+/* 全局样式表 */
+html,
+body,
+#app{
+    height: 100%;
+    margin: 0;
+    padding:0;
+    font-family: '微软雅黑';
+}
+.ttac{
+    width:400px;
+    height: 500px;
+}
+
+.el-menu{
+    height:100vh;
+    border-right: none;
+}
+.el-breadcrumb{
+    margin-bottom: 15px;
+}
+.el-row{
+    margin-bottom: 15px;
+}

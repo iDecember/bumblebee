@@ -1,7 +1,7 @@
 <template>
     <div id="d" class="d">
         <headpage></headpage>
-        <div id="myChart" :style="{width: '300px', height: '300px'}"></div>
+       <!--  <div id="myChart" :style="{width: '300px', height: '300px'}"></div>
         <el-button  v-print="'#table'">打印</el-button>
         <el-table
           id="table"
@@ -23,12 +23,12 @@
             label="地址">
           </el-table-column>
         </el-table>
-        <el-button type="primary" @click="exportInfo" >导出EXCEL</el-button>
+        <el-button type="primary" @click="exportInfo" >导出EXCEL</el-button> -->
     </div>
 </template>
 <script>
 import headpage from '@/components/header'
-import { login } from '../utils/api'
+/* import { login } from '../utils/api'
 import { exportToExcel, isNullAndEmpty, timeJS, arrayJS, objectJS } from '../utils/commen'
 export default {
   data () {
@@ -99,7 +99,7 @@ export default {
     let obj2 = objectJS.deepClone(obj1)
     console.log(obj2)
   }
-}
+} */
 </script>
 <style lang="less" scoped>
 </style>
