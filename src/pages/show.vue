@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import Utils from 'H:/bumblebee/bumblebee/src/utils/api'
+import Utils from '../utils/api'
  /* import user from './user/Users'  */
   /*  import {
     dataList

@@ -9,4 +9,19 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script>
+    var OriginTitle=document.title,
+    titleTime;
+    document.addEventListener("visibilitychange",function(){
+      if(document.hidden){
+        document.title="等你回来~";
+        clearTimeout(titleTime)
+      }else{
+        document.title="(/≧▽≦/)欢迎回来！ "+OriginTitle;
+        titleTime=setTimeout(function(){
+          document.title=OriginTitle;
+        },2000)
+      }
+    });
+  </script>
 </html>

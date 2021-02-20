@@ -29,9 +29,9 @@
         //登录表单的数据绑定对象
         loginForm: {
           grant_type: '',
-          username: ' '
-          /* password:' ',
-          scope:'',
+          username: ' ',
+          password:' '
+          /*scope:'',
           client_id:'',
           client_secret:'' */
         },
@@ -82,10 +82,10 @@
           }
           const res = await this.$http.post('/auth/token', this.$qs.stringify(params));
 
-          //console.log(res.data);
-          if (res.code === 401) return this.$message.error('登陆失败')
-          this.$message.success('登陆成功');
-          //console.log(res);
+          console.log(res.data);
+          if (res.data.code === 401) return this.$message.error('登录失败');
+          this.$message.success('登录成功');
+          console.log(res);
           if (res.data.access_token !== undefined) {
             let token = res.data.token_type + ' ' + res.data.access_token
             window.sessionStorage.setItem('token', token);

@@ -289,7 +289,7 @@
 </template>
 
 <script>
-  import Utils from 'H:/bumblebee/bumblebee/src/utils/api'
+  import Utils from '../../utils/api'
   /*  import {
     getUserStatus
   } from 'c:/Users/ichenxi/Desktop/bee/beeeee/src/utils/api' */
