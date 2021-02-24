@@ -29,8 +29,8 @@
         //登录表单的数据绑定对象
         loginForm: {
           grant_type: '',
-          username: ' ',
-          password:' '
+          username:'',
+          password:''
           /*scope:'',
           client_id:'',
           client_secret:'' */

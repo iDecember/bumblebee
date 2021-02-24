@@ -290,6 +290,7 @@
 
 <script>
   import Utils from '../../utils/api'
+  import Bus from '../../utils/bus'
   /*  import {
     getUserStatus
   } from 'c:/Users/ichenxi/Desktop/bee/beeeee/src/utils/api' */
@@ -422,6 +423,8 @@
       this.getSeatStatusList()
       this.dataList()
       this.getShopList()
+      // this.$Bus.$emit('uploading',this.dataList)
+      console.log(uploading)
     },
     mounted() {
       var that = this
@@ -432,6 +435,7 @@
     },
     methods: {
       toShow() {
+        Bus.$emit('uploading',this.seatList)
         this.$router.push({
           path: './show'
         })

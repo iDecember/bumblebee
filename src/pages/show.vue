@@ -10,7 +10,7 @@
       <el-col :span="10">
         <div class="grid-content bg-purple first">
           <div class="roomName">
-            <button @click="getdata"> chaxun </button>
+            <button> 查询 </button>
           </div>
           <span>show</span>
         </div>
@@ -33,10 +33,8 @@
 
 <script>
 import Utils from '../utils/api'
+import Bus from '../utils/bus'
  /* import user from './user/Users'  */
-  /*  import {
-    dataList
-  } from 'H:/bumblebee/bumblebee/src/pages/user/Users.vue'   */
   export default {
    /*  components:{user}, */
     data() {
@@ -46,19 +44,14 @@ import Utils from '../utils/api'
       }
     },
     methods: {
- /* getdata(){
-   setTimeout(() => {
-      const llist=this.$refs.user.dataList();
-        console.log(llist)
-   }, 100); */
-      /*  getdata(){
-         const res=Utils.$emit('demo','')
-         console.log(res)
-       } */
       
+    
     },
-    created:{
-     
+   
+    mounted(){
+      Bus.$on('uploading',val=>{
+        console.log(val)
+      })
     }
   }
 

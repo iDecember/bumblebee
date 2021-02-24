@@ -15,7 +15,7 @@
     document.addEventListener("visibilitychange",function(){
       if(document.hidden){
         document.title="等你回来~";
-        clearTimeout(titleTime)
+        clearTimeout(titleTime);
       }else{
         document.title="(/≧▽≦/)欢迎回来！ "+OriginTitle;
         titleTime=setTimeout(function(){
