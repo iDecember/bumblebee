@@ -5,6 +5,7 @@ import Welcome from '../pages/Welcome.vue'
 import Users from '../pages/user/Users.vue'
 import show from '../pages/show.vue'
 import qs from 'qs'
+import EventBus from '../utils/bus'
 import {
   cmp
 } from 'semver'
@@ -13,6 +14,8 @@ import {
 const login = () => import('../pages/login.vue')
 
 
+Vue.use(EventBus)
+Vue.prototype.$EventBus=EventBus
 
 Vue.use(Router)
 Vue.use(qs)
